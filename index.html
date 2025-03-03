@@ -824,9 +824,17 @@
                 </div>
                 <div class="row wow fadeInUp">
                     <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-                        <form  action="https://api.web3forms.com/submit" method="post" enctype="text/plain" class="row needs-validation" novalidate id="contact_form">
+                        <form  action="https://api.web3forms.com/submit" method="POST" class="row needs-validation" novalidate id="contact_form">
                             <input type="hidden" name="access_key" value="277a73fe-bb33-4053-b560-f53d28c9caef">
                             <input type="hidden" name="from_name" value="Portfolio Contact">
+                            <!-- Default URL -->
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                            <!-- Custom URL -->
+                            <input type="hidden" name="redirect" value="https://yourwebsite.com/thanks.html">
+
+                            <!-- Redirect to another website -->
+                            <input type="hidden" name="redirect" value="https://partnerwebsite.com/someaction/">
 
                             <div class="col-md-6">
                                 <label for="validationCustomFirstName" class="form-label mb-3">First Name</label>
