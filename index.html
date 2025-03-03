@@ -824,7 +824,10 @@
                 </div>
                 <div class="row wow fadeInUp">
                     <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-                        <form  action="mailto:your-email@example.com" method="post" enctype="text/plain" class="row needs-validation" novalidate>
+                        <form  action="https://api.web3forms.com/submit" method="post" enctype="text/plain" class="row needs-validation" novalidate id="contact_form">
+                            <input type="hidden" name="access_key" value="277a73fe-bb33-4053-b560-f53d28c9caef">
+                            <input type="hidden" name="from_name" value="Portfolio Contact">
+
                             <div class="col-md-6">
                                 <label for="validationCustomFirstName" class="form-label mb-3">First Name</label>
                                 <input type="text" class="form-control" id="validationCustomFirstName" autocomplete="off" placeholder="John" required>
@@ -843,8 +846,10 @@
                                 <label for="validationCustomMessage" class="form-label mb-3">Describe about your problem</label>
                                 <textarea class="form-control" rows="5" id="validationCustomMessage" placeholder="Write a brief message..." required></textarea>
                             </div>
+                            <div class="h-captcha" data-captcha="true"></div>
+
                             <div class="col-12 text-center">
-                                <button class="btn" type="submit">Send Message</button>
+                                <button class="btn" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -905,6 +910,26 @@
     <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
     <!-- Main JS Link -->
     <script src="./assets/js/main.js"></script>
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+    <script>
+        const form = document.getElementById('contact_form');
+        
+        form.addEventListener('submit', function(e) {
+        
+            const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+        
+            if (!hCaptcha) {
+                e.preventDefault();
+                alert("Please fill out captcha field")
+                return
+            }
+        });
+        </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
 
