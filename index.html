@@ -827,37 +827,33 @@
                         <form  action="https://api.web3forms.com/submit" method="POST" class="row needs-validation" novalidate id="contact_form">
                             <input type="hidden" name="access_key" value="277a73fe-bb33-4053-b560-f53d28c9caef">
                             <input type="hidden" name="from_name" value="Portfolio Contact">
-                            <!-- Default URL -->
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
                             <!-- Custom URL -->
-                            <input type="hidden" name="redirect" value="https://yourwebsite.com/thanks.html">
-
-                            <!-- Redirect to another website -->
-                            <input type="hidden" name="redirect" value="https://partnerwebsite.com/someaction/">
+                            <input type="hidden" name="redirect" value="https://rambir-bhatiwal.github.io/portfolio/thanks.html">
 
                             <div class="col-md-6">
                                 <label for="validationCustomFirstName" class="form-label mb-3">First Name</label>
-                                <input type="text" class="form-control" id="validationCustomFirstName" autocomplete="off" placeholder="John" required>
+                                <input type="text" name="first_name" class="form-control" id="validationCustomFirstName" autocomplete="off" placeholder="John" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="validationCustomLastName" class="form-label mb-3">Last Name</label>
-                                <input type="text" class="form-control" id="validationCustomLastName" autocomplete="off" placeholder="Doe" required>
+                                <input type="text" name="first_name" class="form-control" id="validationCustomLastName" autocomplete="off" placeholder="Doe" required>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustomEmail" class="form-label mb-3">Email Address</label>
                                 <div class="input-group has-validation">
-                                    <input type="email" class="form-control" id="validationCustomEmail" autocomplete="on" placeholder="you@company.com" required validate>
+                                    <input type="email" name="email" class="form-control" id="validationCustomEmail" autocomplete="on" placeholder="you@company.com" required validate>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="validationCustomMessage" class="form-label mb-3">Describe about your problem</label>
-                                <textarea class="form-control" rows="5" id="validationCustomMessage" placeholder="Write a brief message..." required></textarea>
+                                <textarea class="form-control" name="message" rows="5" id="validationCustomMessage" placeholder="Write a brief message..." required></textarea>
                             </div>
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                             <div class="h-captcha" data-captcha="true"></div>
 
                             <div class="col-12 text-center">
-                                <button class="btn" type="submit">Submit</button>
+                                <button class="btn" id="submit" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
