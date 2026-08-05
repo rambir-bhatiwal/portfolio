@@ -165,6 +165,17 @@ $(document).ready(function() {
     }
   });
 
+// Dynamic Year for Footer
+function setDynamicYear() {
+    var yearSpans = document.querySelectorAll('.current-year');
+    var currentYear = new Date().getFullYear();
+    yearSpans.forEach(function (span) {
+        span.textContent = currentYear;
+    });
+}
+setDynamicYear();
+document.addEventListener('DOMContentLoaded', setDynamicYear);
+
 
 
 // Template Name: {{CSUME V3 - Cyber Security Expert One Page Website Template}}
