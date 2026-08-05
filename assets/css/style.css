@@ -599,12 +599,33 @@ h1 span {
     padding: 7px 0px;
     color: var(--color_two);
 }
-.d2c_project_wrapper .d2c_icon {
-    width: 24px;
-    height: 24px;
+.d2c_see_all_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--default_color);
-    font-size: 10px;
-    margin-right: 10px;
+    background: linear-gradient(135deg, var(--secondary_color) 0%, #434EB0 100%);
+    border: 1px solid rgba(120, 119, 198, 0.4);
+    border-radius: 50px;
+    box-shadow: 0px 6px 20px rgba(94, 106, 210, 0.35);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+.d2c_see_all_btn i {
+    transition: transform 0.3s ease;
+}
+.d2c_see_all_btn:hover {
+    color: var(--primary_color);
+    background: linear-gradient(135deg, #4B55C4 0%, #353F9B 100%);
+    box-shadow: 0px 10px 30px rgba(94, 106, 210, 0.6);
+    transform: translateY(-3px);
+    border-color: var(--secondary_color);
+}
+.d2c_see_all_btn:hover i {
+    transform: translateX(5px);
 }
 /* Project Section End */
 
@@ -813,11 +834,12 @@ textarea {
     background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.05) 100%), var(--primary_bg);
     color: var(--secondary_color);
     margin-right: 0;
-    transition: 0.4s all;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .d2c_copy_right_wrapper .d2c_icon:hover {
     color: var(--primary_color);
-    transition: 0.4s all;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.55) 0%, rgba(13, 17, 26, 0.4) 100%), var(--primary_bg);
+    transform: translateY(-3px);
 }
 /* Copy Right Section End */
 
