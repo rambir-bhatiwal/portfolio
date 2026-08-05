@@ -353,8 +353,38 @@ h1 span {
 .d2c_hero_wrapper .d2c_img_overlay {
     border-radius: 296.5px 0px 0px 5px;
 }
-.d2c_hero_wrapper p {
-    margin-bottom: 35px;
+.d2c_hero_social_links {
+    margin-bottom: 24px;
+}
+.d2c_hero_social_links ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.d2c_hero_social_links ul li {
+    padding: 0;
+}
+.d2c_hero_social_links .d2c_icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.35) 0%, rgba(13, 17, 26, 0.4) 100%), var(--primary_bg);
+    border: 1px solid rgba(94, 106, 210, 0.3);
+    border-bottom: 2px solid var(--secondary_color);
+    color: var(--secondary_color);
+    box-shadow: 0px 4px 15px rgba(94, 106, 210, 0.2);
+    margin-right: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.d2c_hero_social_links .d2c_icon:hover {
+    color: var(--primary_color);
+    background: radial-gradient(100% 100% at 50% 0%, rgba(120, 119, 198, 0.55) 0%, rgba(13, 17, 26, 0.8) 100%), var(--secondary_color);
+    border-color: var(--secondary_color);
+    box-shadow: 0px 8px 25px rgba(94, 106, 210, 0.45);
+    transform: translateY(-4px) scale(1.06);
 }
 /* Hero Section End */
 
