@@ -70,9 +70,12 @@ h5 {
     font-weight: 500;
 }
 p {
-    color: var(--text_color);
-    font-size: 18px;
-    font-weight: 300;
+    /* color: var(--text_color); */
+    /* font-size: 18px; */
+    /* font-weight: 300; */
+    color:whitesmoke;   
+    font-size: large;
+    font-weight: 400;
 }
 .d2c_img_wrapper {
     width: 593px;
